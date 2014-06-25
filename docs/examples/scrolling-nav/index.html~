@@ -15,6 +15,12 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet" type="text/css">
 
+    <!-- Fonts css spreadsheet -- Comments what we are not using since that it has to be loaded -->
+    <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -36,7 +42,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
 	        <ul class="nav navbar-nav">
                     <li class="page-scroll">
-                        <a href="#home">Home</a>
+                        <a href="#home"><i class="glyphicon glyphicon-home"></i> Home</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#objectives">Objectives</a>
@@ -59,7 +65,7 @@
  		    <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
- 		    <li class="page-scroll">
+		    <li class="page-scroll">
                         <a href="#blog">Blog</a>
                     </li>
 		</ul>
@@ -82,55 +88,86 @@ The layout will be as follow:
 	- a left side-bar to obtain a centered navigation
 -->
 
-<div class="container-fluid">
+<div class="container-fluid container-body">
 	<div class="row">
 	  	
 		<div class="left-side-bar col-xs-2"></div>
 	  
 		
 		<div class="main-body col-xs-8">
+
 			<section id="home" class="home-section">
-			<div class="container">
-				<h1>Home Section</h1>
-			</div>
+				<h2 class="page-header">Home</h2>
+				<h4></h4>
+				<p></p>
 			</section>
 
 			<section id="objectives" class="objective-section">
-			<div class="container">
-				<h1>Objectives Section</h1>
-			</div>
+				<h2 class="page-header">Objectives</h2>
+				<h4 class="h4-gray">I2CVB aims at pushing forward multiple objectives.</h4>
+				<p></p>
 			</section>
 
 			<section class="benchmark-section">
-			<div class="container">
-			    <h1>Benchmarks Section</h1>
-			    <h2>Medical Imaging</h2>
-			    <h3 id="brain">Brain:</h3>
-			    <h3 id="breast">Breast:</h3>
-			    <h3 id="prostate">Prostate:</h3>
-			    <h3 id="skin">Skin:</h3>
-			    <h2>Computer Vision</h2>
-			    <h3 id="motion-segmentation">Motion Segmentation:</h3>
-			</div>
+			    <h2 class="page-header">Benchmarks Section</h1>
+			    <h3>Medical Imaging</h3>
+			    <h4 id="brain">Brain:</h4>
+			    <h4 id="breast">Breast:</h4>
+			    <h4 id="prostate">Prostate:</h4>
+			    <h4 id="skin">Skin:</h4>
+			    <h3>Computer Vision</h3>
+			    <h4 id="motion-segmentation">Motion Segmentation:</h4>
 			</section>
 
 			<section id="contact" class="contact-section">
-			<div class="container">
-				<h1>Contact Section</h1>
-			</div>
+				<h2 class="page-header">Contact</h2>
+				<h4 class ="text-center vertical-space-20px">Questions, comments and remarks can be sent to:</h4>
+				<div class="row equal">
+				<div class="col-xs-6">
+					<div class="panel panel-warning" id="contact1">
+				        	<div class="panel-heading">
+					        <h3 class="panel-title text-center">Joan Massich Vall</h3>
+					        </div>
+					        <div class="panel-body">
+							  <div class="image-center"> <img src="./images/logos/le2i-logo.png" height="32"> </div>
+							  <address class="text-center">
+							  <strong>Laboratoire LE2I</strong><br>
+							  12, Rue de la Fonderie<br>
+							  71200 Le Creusot<br>
+							  <abbr title="Phone">P:</abbr> (+33) 000000000<br>
+							  <a href="mailto:joan_massich-vall@etu.u-bourgogne.fr">joan_massich-vall@etu.u-bourgogne.fr</a>
+						   	  </address>
+					    	</div>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="panel panel-warning" id="contact2">
+				        	<div class="panel-heading">
+					        <h3 class="panel-title text-center">Guillaume Lemaitre</h3>
+					        </div>
+					        <div class="panel-body">
+							  <div class="image-center"> <img src="./images/logos/vicorob-logo.png" height="32"> </div>
+							  <address class="text-center">
+							  <strong>ViCOROB</strong><br>
+							  Campus Montilivi, <br> Edifici P4<br>
+							  17071 Girona<br>
+							  <abbr title="Phone">P:</abbr> (+33) 761104782<br>
+							  <a href="mailto:guillaume.lemaitre@udg.edu">guillaume.lemaitre@udg.edu</a>
+						   	  </address>
+					    	</div>
+					</div>
+				</div>
+				</div>
 			</section>
 
-			<section id="blog" class="blog-section">
-			<div class="container">
-				<h1>Link to blog</h1>
-			</div>
-			</section>
-		</div>
+		</div><!-- End main body -->
 	  
 		
 		<div class="right-side-bar col-xs-2">
-			<a class="twitter-timeline"  href="https://twitter.com/glemaitre58"  data-widget-id="481076009970589697">Tweets by @glemaitre58</a>
-		  	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
+			<a class="twitter-timeline"  href="https://twitter.com/I2CVB"  data-widget-id="481370957357924352">Tweets by @I2CVB</a>
+    			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
 	  	</div>
 	</div>
 </div>

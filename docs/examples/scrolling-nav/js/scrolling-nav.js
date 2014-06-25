@@ -6,7 +6,8 @@ $(window).scroll(function() {
 	$(".centered").addClass("navbar-footer");
 	$(".navbar-brand-logo").addClass("scrolled");
 	$(".right-side-bar").addClass("scrolled");
-	$(".left-side-bar").removeClass("scrolled");	
+	$(".left-side-bar").addClass("scrolled");
+	$(".home-section").addClass("scrolled");	
     } else {
 	$(".navbar-fixed-top").addClass("navbar-big");
 	$(".navbar-fixed-top").removeClass("navbar-small");
@@ -14,6 +15,7 @@ $(window).scroll(function() {
 	$(".navbar-brand-logo").removeClass("scrolled");
 	$(".right-side-bar").removeClass("scrolled");
 	$(".left-side-bar").removeClass("scrolled");
+	$(".home-section").removeClass("scrolled");
     }
 });
 
@@ -26,4 +28,16 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+});
+
+// jQuery in order to obtain autoheight for the panel
+$(function() {
+    var $hContact1 = $( "#contact1" ).height();
+    var $hContact2 = $( "#contact2" ).height();
+    if ($hContact1 > $hContact2){
+        $( "#contact2" ).height( $hContact1 );
+    }
+    else {
+        $( "#contact1" ).height( $hContact2 );
+    }
 });

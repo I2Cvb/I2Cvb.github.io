@@ -1,12 +1,14 @@
 body {
-    width: 100%;
-    height: 100%;
+   width: 100%;
+   height: 100%;
 }
 
 html {
-    width: 100%;
-    height: 100%;
+   width: 100%;
+   height: 100%;
 }
+
+/* Environment for the right side bar */
 
 .right-side-bar{
   padding-top: 280px;
@@ -20,6 +22,8 @@ html {
   right: 0;
 }
 
+/* Environment for the left side bar */
+
 .left-side-bar{
   padding-top: 280px;
 }
@@ -27,6 +31,64 @@ html {
 .left-side-bar.scrolled{
   padding-top: 280px;
 }
+
+/* Environment for the navigation bar */
+
+.navbar-big {
+  padding-top:200px;
+  background:url(../images/logos/hand-long-text.png) no-repeat top 20px center;
+  background-color: #f8f8f8;
+  background-size:700px;
+  -webkit-transition: padding .5s ease-in-out;
+  -moz-transition: padding .5s ease-in-out;
+  transition: padding .5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .navbar-big {
+    padding-top:200px;
+    background:url(../images/logos/hand-long-text.png) no-repeat top 20px center;
+    background-color: #f8f8f8;
+    background-size:100%;
+    -webkit-transition: padding .5s ease-in-out;
+    -moz-transition: padding .5s ease-in-out;
+    transition: padding .5s ease-in-out;
+  }
+}
+
+.navbar-small {
+  padding-top: 25px;
+  background-color: #f8f8f8;
+  -webkit-transition: padding .5s ease-in-out;
+  -moz-transition: padding .5s ease-in-out;
+  transition: padding .5s ease-in-out;
+}
+.navbar-brand-logo {
+  height: 60px;
+  width: 100px;
+  float: left;
+  padding: 15px 15px;
+}
+
+.navbar-brand-logo:hover,
+.navbar-brand-logo:focus {
+  text-decoration: none;
+}
+
+.navbar-brand-logo.scrolled {
+  height: 60px;
+  width: 120px;
+  float: left;
+  padding: 15px 15px;
+  background:url(../images/logos/hand-short-text.png) no-repeat top -10px left 0;
+  background-size:100px;
+}
+.navbar-brand-logo.scrolled:hover,
+.navbar-brand-logo.scrolled:focus {
+  text-decoration: none;
+}
+
+/* Environment for the sticky footer bar */
 
 .block {
   text-align: center;
@@ -70,83 +132,158 @@ html {
   }
 }
 
-.navbar-big {
-  padding-top:200px;
-  background:url(../images/logos/hand-long-text.png) no-repeat top 0px center;
-  background-color: #f8f8f8;
-  background-size:350px;
-  -webkit-transition: padding .5s ease-in-out;
-  -moz-transition: padding .5s ease-in-out;
-  transition: padding .5s ease-in-out;
+/* Environment for the body */
+
+.h4-gray{
+  /*font-family: 'Chewy', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Exo 2', sans-serif;*/
+  font-family: 'Neucha', cursive;
+  font-weight:bold;
+  color: #666666;
+  text-align: justify;
 }
 
-.navbar-small {
-  padding-top: 25px;
-  background-color: #f8f8f8;
-  -webkit-transition: padding .5s ease-in-out;
-  -moz-transition: padding .5s ease-in-out;
-  transition: padding .5s ease-in-out;
-}
-.navbar-brand-logo {
-  height: 60px;
-  width: 100px;
-  float: left;
-  padding: 15px 15px;
+.mypanel {
+  height: 100%;
 }
 
-.navbar-brand-logo:hover,
-.navbar-brand-logo:focus {
-  text-decoration: none;
+.row.equal [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
-.navbar-brand-logo.scrolled {
-  height: 60px;
-  width: 100px;
-  float: left;
-  padding: 15px 15px;
-  background:url(../images/logos/hand-short-text.png) no-repeat top 0 left 0;
-  background-size:100px;
+.row.equal{
+  overflow: hidden; 
 }
-.navbar-brand-logo.scrolled:hover,
-.navbar-brand-logo.scrolled:focus {
-  text-decoration: none;
+
+.vertical-space-20px{
+  margin-bottom: 20px;
 }
 
 .home-section {
-    height: 100%;
-    padding-top: 280px;
-    padding-bottom: 25px;
-    background: #fff;
+  height: 100%;
+  margin-top: 280px;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+  background: #f8f8f8;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #eee;
+  border-radius: 25px;
+}
+
+.home-section.scrolled {
+  height: 100%;
+  margin-top: 160px;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+  background: #f8f8f8;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #eee;
+  border-radius: 25px;
 }
 
 .objective-section {
-    height: 100%;
-    padding-top: 50px;
-    padding-bottom: 25px;
-    background: #eee;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 25px;
+  background: #f8f8f8;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #eee;
+  border-radius: 25px;
 }
 
 .benchmark-section {
-    height: 100%;
-    padding-top: 50px;
-    padding-bottom: 25px;
-    background: #fff;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 25px;
+  background: #f8f8f8;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #eee;
+  border-radius: 25px;
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 50px;
-    padding-bottom: 25px;
-    background: #eee;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 90px;
+  padding-top: 1px;
+  padding-bottom: 25px;
+  background: #f8f8f8;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #eee;
+  border-radius: 25px;
 }
 
-.blog-section {
-    height: 100%;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    background: #fff;
+.page-header {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: #f46f1b;
 }
 
+.highlight-orange {
+  color: #f46f1b;
+}
+
+.framing {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.image-center{
+    text-align: center;
+}
+
+/* Panel-warning coloring for our orange matching */
+
+.panel-warning {
+  /*border-color: #faebcc;*/
+  border-color: #fbc2a2;
+  border-radius: 10px;
+}
+.panel-warning > .panel-heading {
+  /*color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;*/
+  color: #f57947;
+  background-color: #feeee0;
+  border-color: #fbc2a2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.panel-warning > .panel-heading + .panel-collapse .panel-body {
+  /*border-top-color: #faebcc;*/
+  border-top-color: #fbc2a2;
+}
+.panel-warning > .panel-footer + .panel-collapse .panel-body {
+  /*border-bottom-color: #faebcc;*/
+  border-bottom-color: #fbc2a2;
+}
+
+/*=======================*/
+/* Additional Fonts */
+/*=======================*/
+
+/* Ubuntu fonts */
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
@@ -188,4 +325,12 @@ html {
   font-style: normal;
   font-weight: 400;
   src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(http://themes.googleusercontent.com/static/fonts/ubuntumono/v4/ViZhet7Ak-LRXZMXzuAfkYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+/* FFF Tusj font */
+@font-face {
+  font-family: 'FFF Tusj';
+  font-style: normal;
+  font-weight: 400;
+  src: local('FFF Tusj'), url(../fonts/fff-tusj.ttf) format('truetype');
 }
