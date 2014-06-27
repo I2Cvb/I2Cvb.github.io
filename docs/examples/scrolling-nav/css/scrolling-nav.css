@@ -192,13 +192,13 @@ html {
   font-family: 'Exo 2', sans-serif;*/
   font-family: 'Ubuntu', sans-serif;
   color: #666666;
-  text-align: justify;
+  text-align: left;
 }
 
-.ubuntu-condensed-font {
+.par-ubuntu {
   font-family: 'Ubuntu', sans-serif;
   color: #666666;
-  text-align: justify;
+  text-align: left;
 }
 
 .row.equal [class*="col-"]{
