@@ -195,10 +195,33 @@ html {
   text-align: left;
 }
 
+.title-principle{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #403333;
+}
+
 .par-ubuntu {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
   color: #666666;
   text-align: left;
+}
+
+.row-principle{
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.row-principle-no-border{
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .row.equal [class*="col-"]{
@@ -516,4 +539,3 @@ html {
 .navbar-footer .navbar-link:hover {
   color: #333;
 }*/
-
