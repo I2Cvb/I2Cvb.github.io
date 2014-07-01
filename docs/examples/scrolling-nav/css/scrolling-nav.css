@@ -189,25 +189,30 @@ html {
 /* Environment for the body */
 
 .first-par{
-  /*font-family: 'Chewy', cursive;
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Exo 2', sans-serif;*/
   font-family: 'Ubuntu', sans-serif;
-  color: #666666;
+  font-weight: 300;
+  color: #333333;
   text-align: left;
 }
 
 .title-principle{
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
+  font-family: 'FFF Tusj';
+  font-weight: 400;
   color: #403333;
+  text-align: left;
 }
+
+.title-principle::first-letter{
+  font-size:40px;
+  color:#f46f1b;
+  font-family: 'FFF Tusj';
+} 
 
 .par-ubuntu {
   font-family: 'Ubuntu', sans-serif;
   font-size: 12pt;
   font-weight: 300;
-  color: #666666;
+  color: #333333;
   text-align: left;
 }
 
@@ -218,7 +223,7 @@ html {
 }
 
 .img-center {
-  width:100%;
+  width:50%;
   display: block;
   margin: 0 auto;
   vertical-align: middle;
