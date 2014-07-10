@@ -290,6 +290,32 @@ html {
   margin-right: 10px;
 }
 
+.first-reference {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 8pt;
+  font-weight: 300;
+  color: #333333;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.reference {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 8pt;
+  font-weight: 300;
+  color: #333333;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.reference-section{
+  margin-top: 25px;
+  border-top: 1px solid #ccc;
+}
+
 /* Environment for the body */
 
 .home-section {
