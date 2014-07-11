@@ -53,8 +53,8 @@ html {
 
 .navbar-big {
   padding-top:200px;
-  background:url(../images/logos/hand-long-text.png) no-repeat top 20px center;
-  background-color: rgba(220,228,247,0.9);/*#eef1fb;*/
+  background:url(../images/logos/hand-long-text2.png) no-repeat top 20px center;
+  background-color: rgba(0,41,75,0.9);/*#eef1fb;*/
   background-size:700px;
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
@@ -65,7 +65,7 @@ html {
   .navbar-big {
     padding-top:200px;
     background:url(../images/logos/hand-long-text.png) no-repeat top 20px center;
-    background-color: #eef1fb;
+    background-color: rgba(0,41,75,0.9);
     background-size:100%;
     -webkit-transition: padding .5s ease-in-out;
     -moz-transition: padding .5s ease-in-out;
@@ -75,7 +75,7 @@ html {
 
 .navbar-small {
   padding-top: 25px;
-  background-color: rgba(220,228,247,0.9);/* #eef1fb;*/
+  background-color: rgba(0,41,75,0.9);/* #eef1fb;*/
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;
@@ -101,7 +101,7 @@ html {
   width: 120px;
   float: left;
   padding: 15px 15px;
-  background:url(../images/logos/hand-short-text.png) no-repeat top 0px left 0;
+  background:url(../images/logos/hand-short-text2.png) no-repeat top 0px left 0;
   background-size:100px;
 }
 .navbar-brand-logo.scrolled:hover,
@@ -123,29 +123,35 @@ html {
   background-color: #dce4f7;
   outline: 0;
 }
+
+.navbar-default .navbar-nav > li > a {
+  color: #f46f1b;
+}
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
-  background-color: #fafbff;
+  color: #f46f1b;
+  background-color: rgba(0,41,75,0.7);/*#eef1fb;*/
+  /*background-color: #fafbff;*/
   border-radius: 10px;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #dce4f7;
+  color: #f46f1b;
+  background-color: rgba(0,41,75,0.5);/*#eef1fb;*/
+  /*background-color: #dce4f7;*/
   border-radius: 10px;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #ccc;
+  color: #f46f1b;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #555;
+  color: #f46f1b;
   background-color: #fafbff;
 }
 
