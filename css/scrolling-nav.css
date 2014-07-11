@@ -280,9 +280,9 @@ html {
   font-family: 'FFF Tusj';
   font-weight: 400;
   color: #403333;
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .title-principle::first-letter{
@@ -298,6 +298,17 @@ html {
   text-align: left;
   margin-left: 10px;
   margin-right: 10px;
+  padding-bottom: 25px;
+}
+
+.first-par-benchmark{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #333333;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
 }
 
 .introduction-ubuntu{
@@ -323,8 +334,8 @@ html {
 .section-benchmark{
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #dce4f7;
@@ -335,22 +346,22 @@ html {
 .section-benchmark1{
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /*padding-top: 15px;
-    padding-bottom: 15px;*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #f5f7ff;
     border: 1px solid #f5f7ff;
     border-radius: 25px;
 }
 
 .section-benchmark2{
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
-    /*padding-top: 15px;
-    padding-bottom: 15px;*/
     background-color: #e6eaf5;
     border: 1px solid #e6eaf5;
     border-radius: 25px;
@@ -543,7 +554,7 @@ html {
 
 /* Twitter widget */
 
-.twitter-css {
+#twitter-css {
   background-color: #eef1fb;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
