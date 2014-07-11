@@ -33,12 +33,28 @@ html {
   padding-top: 280px;
 }
 
+.objective-framing1{
+        background: #f5f7ff;
+	border: 1px solid #eee;
+	border-radius: 15px;
+	padding-bottom: 25px;
+}
+
+.objective-framing2{
+        background: #e6eaf5;
+	border: 1px solid #eee;
+	border-radius: 15px;
+	padding-bottom: 25px;
+}
+
+/* Environment for the sections in the benchmarking */
+
 /* Environment for the navigation bar */
 
 .navbar-big {
   padding-top:200px;
   background:url(../images/logos/hand-long-text.png) no-repeat top 20px center;
-  background-color: #eef1fb;
+  background-color: rgba(220,228,247,0.9);/*#eef1fb;*/
   background-size:700px;
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
@@ -59,10 +75,11 @@ html {
 
 .navbar-small {
   padding-top: 25px;
-  background-color: #eef1fb;
+  background-color: rgba(220,228,247,0.9);/* #eef1fb;*/
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;
+  
 }
 
 .navbar-brand-logo {
@@ -134,6 +151,10 @@ html {
 
 /* Environment for the sticky footer bar */
 
+.navbar-footer>.container{
+  height: 0;
+}
+
 .navbar-footer.collapse{
   height: 0;
 }
@@ -159,18 +180,18 @@ html {
 .navbar-footer-text {
   font-family: 'FFF Tusj';
   text-align: center;
-  background-color: #eef1fb;
+  background-color: rgba(247,249,255,0.8);/* #eef1fb;*/
 }
 
 .centered {
   display: inline-block;
   vertical-align: middle;
   width: 80%;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 .navbar-footer-text:after {
   content: "Initiative for Collaborative Computer Vision Benchmarking";
-  font-size: 20px;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -178,11 +199,11 @@ html {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
   }
   .navbar-footer-text:after {
     content: "Initiative for Collaborative Computer Vision Benchmarking";
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
@@ -229,8 +250,8 @@ html {
 .row-principle-no-border{
   margin-left: 5px;
   margin-right: 5px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .row.equal [class*="col-"]{
@@ -280,6 +301,16 @@ html {
   margin-right: 10px;
 }
 
+.introduction-ubuntu{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13pt;
+  font-weight: 300;
+  color: #333333;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .par-ubuntu {
   font-family: 'Ubuntu', sans-serif;
   font-size: 12pt;
@@ -288,6 +319,42 @@ html {
   text-align: left;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.section-benchmark{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #dce4f7;
+    border: 1px solid #dce4f7;
+    border-radius: 25px;
+}
+
+.section-benchmark1{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*padding-top: 15px;
+    padding-bottom: 15px;*/
+    background-color: #f5f7ff;
+    border: 1px solid #f5f7ff;
+    border-radius: 25px;
+}
+
+.section-benchmark2{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*padding-top: 15px;
+    padding-bottom: 15px;*/
+    background-color: #e6eaf5;
+    border: 1px solid #e6eaf5;
+    border-radius: 25px;
 }
 
 .first-reference {
@@ -309,11 +376,13 @@ html {
   text-align: left;
   margin-left: 10px;
   margin-right: 10px;
+  padding-top: 10px;
 }
 
 .reference-section{
-  margin-top: 25px;
-  border-top: 1px solid #ccc;
+  margin-left: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Environment for the body */
@@ -538,7 +607,7 @@ html {
 }
 
 .navbar-footer {
-  background-color: #eef1fb;
+  background-color: rgba(247,249,255,0.8);/* #eef1fb;*/
   border-color: #e7e7e7;
 }/*
 .navbar-footer .navbar-brand {

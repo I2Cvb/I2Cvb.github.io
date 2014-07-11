@@ -8,7 +8,7 @@ $(window).scroll(function() {
 	$(".right-side-bar").addClass("scrolled");
 	$(".left-side-bar").addClass("scrolled");
 	$(".home-section").addClass("scrolled");
-	$(".navbar-footer").removeClass("collapse");
+	//$(".navbar-footer").removeClass("collapse");
     } else {
 	$(".navbar-fixed-top").addClass("navbar-big");
 	$(".navbar-fixed-top").removeClass("navbar-small");
@@ -17,7 +17,7 @@ $(window).scroll(function() {
 	$(".right-side-bar").removeClass("scrolled");
 	$(".left-side-bar").removeClass("scrolled");
 	$(".home-section").removeClass("scrolled");
-	$(".navbar-footer").addClass("collapse");
+	//$(".navbar-footer").addClass("collapse");
     }
 });
 
