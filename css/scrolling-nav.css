@@ -126,33 +126,26 @@ html {
 
 .navbar-default .navbar-nav > li > a {
   color: #f46f1b;
+  outline: 0;
 }
-.navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #f46f1b;
-  background-color: rgba(0,41,75,0.7);/*#eef1fb;*/
-  /*background-color: #fafbff;*/
-  border-radius: 10px;
+  background-color: transparent;
+  outline: 0;
 }
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #f46f1b;
-  background-color: rgba(0,41,75,0.5);/*#eef1fb;*/
-  /*background-color: #dce4f7;*/
+  background-color: #022a4c;
+  outline: 0;
   border-radius: 10px;
 }
-.navbar-default .navbar-nav > .disabled > a,
-.navbar-default .navbar-nav > .disabled > a:hover,
-.navbar-default .navbar-nav > .disabled > a:focus {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover{
   color: #f46f1b;
-  background-color: transparent;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #f46f1b;
-  background-color: #fafbff;
+  background-color: #dce5f8;
+  outline: 0;
+  border-radius: 10px;
 }
 
 /* Environment for the sticky footer bar */
