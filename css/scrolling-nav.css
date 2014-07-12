@@ -249,8 +249,8 @@ html {
 .row-principle-no-border{
   margin-left: 5px;
   margin-right: 5px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .row.equal [class*="col-"]{
