@@ -71,7 +71,7 @@ html {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     color: #333333;
-    text-align: left;
+    text-align: justify;
     border-radius: 15px;
 }
 
@@ -138,7 +138,7 @@ html {
 @media (max-width: 768px) {
   .navbar-big {
     padding-top:200px;
-    background:url(../images/logos/hand-long-text.png) no-repeat top 20px center;
+    background:url(../images/logos/hand-long-text2.png) no-repeat top 20px center;
     background-color: rgba(0,41,75,0.9);
     background-size:100%;
     -webkit-transition: padding .5s ease-in-out;
@@ -187,19 +187,61 @@ html {
   outline: 0;
 }
 
+.dropdown {
+  position: relative;
+}
+.dropdown-header{
+  color: #f4ab7a;
+  font-weight: 700;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: rgba(0,41,75,0.9);
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  color: #f46f1b;
+}
+
+.dropdown-menu > li > a{
+  color: #f46f1b;
+  text-decoration: none;
+}
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
+  color: #f46f1b;
   text-decoration: none;
   background-color: #dce4f7;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #fff;
+  color: #f46f1b;
   text-decoration: none;
   background-color: #dce4f7;
   outline: 0;
+}
+
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  outline: 0;
+  color: #f46f1b;
+  border-radius: 10px;
+  background-color: #dce4f7;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -234,10 +276,6 @@ html {
 
 .navbar-footer.collapse{
   height: 0;
-}
-
-.open .dropdown-toggle.btn-default {
-  background-image: #eef1fb;
 }
 
 .block {
@@ -293,7 +331,7 @@ html {
 }
 
 .img-center {
-  width:50%;
+  width:80%;
   display: block;
   margin: 0 auto;
   vertical-align: middle;
@@ -310,8 +348,8 @@ html {
 .row-principle-top-bottom-border{
   margin-left: 5px;
   margin-right: 5px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 25px;
+  padding-top: 25px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
@@ -325,10 +363,10 @@ html {
 }
 
 .row-principle-no-border{
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .row.equal [class*="col-"]{
@@ -391,7 +429,7 @@ html {
 
 .introduction-ubuntu{
   font-family: 'Ubuntu', sans-serif;
-  font-size: 13pt;
+  font-size: 12.5pt;
   font-weight: 300;
   color: #333333;
   text-align: left;
@@ -401,10 +439,10 @@ html {
 
 .par-ubuntu {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 12pt;
+  font-size: 11.5pt;
   font-weight: 300;
   color: #333333;
-  text-align: left;
+  text-align: justify;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -424,25 +462,30 @@ html {
 .section-benchmark1{
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #f5f7ff;
     border: 1px solid #f5f7ff;
     border-radius: 25px;
 }
 
 .section-benchmark2{
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #e6eaf5;
-    border: 1px solid #e6eaf5;
+    background-color: #e6eaf5;/*#eef1fb;*/
+    border: 1px solid #e6eaf5;/*#eef1fb;*/
     border-radius: 25px;
+}
+
+.extra-padding-15{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .first-reference {
@@ -478,7 +521,7 @@ html {
 .home-section {
   height: 100%;
   margin-top: 280px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   padding-bottom: 25px;
   background: #f5f7ff;/*eef1fb;*/
   padding-right: 15px;
@@ -492,7 +535,7 @@ html {
 .home-section.scrolled {
   height: 100%;
   margin-top: 160px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   padding-bottom: 25px;
   background: #f5f7ff;
   padding-right: 15px;
@@ -520,8 +563,8 @@ html {
 
 .benchmark-section {
   height: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   padding-top: 1px;
   padding-bottom: 25px;
   background: #f5f7ff;
@@ -535,7 +578,7 @@ html {
 
 .contact-section {
   height: 100%;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 90px;
   padding-top: 1px;
   padding-bottom: 25px;
