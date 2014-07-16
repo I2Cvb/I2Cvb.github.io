@@ -67,7 +67,7 @@ html {
     border-left-width:5px;
     border-radius:3px;
     background-color: #f4e8e0;
-    font-size: 12pt;
+    font-size: 10pt;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     color: #333333;
@@ -163,11 +163,13 @@ html {
   padding: 15px 15px;
   margin-top: -10px;
   margin-bottom: 15px;
+  outline: 0;
 }
 
 .navbar-brand-logo:hover,
 .navbar-brand-logo:focus {
   text-decoration: none;
+  outline: 0;
 }
 
 .navbar-brand-logo.scrolled {
@@ -177,10 +179,12 @@ html {
   padding: 15px 15px;
   background:url(../images/logos/hand-short-text2.png) no-repeat top 0px left 0;
   background-size:100px;
+  outline: 0;
 }
 .navbar-brand-logo.scrolled:hover,
 .navbar-brand-logo.scrolled:focus {
   text-decoration: none;
+  outline: 0;
 }
 
 .dropdown-menu > li > a:hover,
