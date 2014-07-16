@@ -1,7 +1,7 @@
 body {
    width: 100%;
    height: 100%;
-   background-color: #f7f9ff;
+   background-color: #eef1fb;
 }
 
 html {
@@ -480,12 +480,12 @@ html {
   margin-top: 280px;
   margin-bottom: 10px;
   padding-bottom: 25px;
-  background: #eef1fb;
+  background: #f5f7ff;/*eef1fb;*/
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #eee;
+  border: 1px solid #f5f7ff;
   border-radius: 25px;
 }
 
@@ -494,12 +494,12 @@ html {
   margin-top: 160px;
   margin-bottom: 10px;
   padding-bottom: 25px;
-  background: #eef1fb;
+  background: #f5f7ff;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #eee;
+  border: 1px solid #f5f7ff;
   border-radius: 25px;
 }
 
@@ -509,12 +509,12 @@ html {
   margin-bottom: 10px;
   padding-top: 1px;
   padding-bottom: 25px;
-  background: #eef1fb;
+  background: #f5f7ff;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #eee;
+  border: 1px solid #f5f7ff;
   border-radius: 25px;
 }
 
@@ -524,12 +524,12 @@ html {
   margin-bottom: 10px;
   padding-top: 1px;
   padding-bottom: 25px;
-  background: #eef1fb;
+  background: #f5f7ff;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #eee;
+  border: 1px solid #f5f7ff;
   border-radius: 25px;
 }
 
@@ -539,12 +539,12 @@ html {
   margin-bottom: 90px;
   padding-top: 1px;
   padding-bottom: 25px;
-  background: #eef1fb;
+  background: #f5f7ff;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #eee;
+  border: 1px solid #f5f7ff;
   border-radius: 25px;
 }
 
@@ -633,7 +633,7 @@ html {
 /* Twitter widget */
 
 #twitter-css {
-  background-color: #eef1fb;
+  background-color: #f5f7ff;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
 }
