@@ -633,7 +633,7 @@ html {
 /* Twitter widget */
 
 #twitter-css {
-  background-color: #f5f7ff;
+  background-color: #eef1fb; /*#f5f7ff;*/
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
 }
