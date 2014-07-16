@@ -49,6 +49,80 @@ html {
 
 /* Environment for the sections in the benchmarking */
 
+.h4-ubuntu {
+    font-size: 13pt;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    margin-left: 10px;
+    color: #f46f1b;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f4c7ab;
+    width: 150px;
+}
+
+.bs-callout{
+    padding:20px;
+    margin:20px 0;
+    border:1px solid #eee;
+    border-left-width:5px;
+    border-radius:3px;
+    background-color: #f4e8e0;
+    font-size: 12pt;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #333333;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.bs-callout h4{
+    margin-top:0;
+    margin-bottom:5px
+}
+
+.bs-callout p:last-child{
+    margin-bottom:0
+}
+.bs-callout code{
+    border-radius:3px
+}
+
+.bs-callout+.bs-callout{
+    margin-top:-5px
+}
+
+.bs-callout-danger{
+    border-left-color:#d9534f
+}
+
+.bs-callout-danger h4{
+    color:#d9534f;
+    margin-bottom: 15px;
+    font-size: 14pt;
+}
+
+.bs-callout-warning{
+    border-left-color:#f46f1b
+}
+
+.bs-callout-warning h4{
+    color:#f46f1b;
+    margin-bottom: 15px;
+    font-size: 14pt;
+}
+
+.bs-callout-info{
+    border-left-color:#5bc0de
+}
+
+.bs-callout-info h4{
+    color:#5bc0de
+}
+
+.vspace-30{
+    margin-top: 30px;
+}
+
 /* Environment for the navigation bar */
 
 .navbar-big {
