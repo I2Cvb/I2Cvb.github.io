@@ -331,7 +331,7 @@ html {
 }
 
 .img-center {
-  width:80%;
+  width: 150px;
   display: block;
   margin: 0 auto;
   vertical-align: middle;
