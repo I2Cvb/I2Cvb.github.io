@@ -979,3 +979,7 @@ html {
 	width:263px
     }
 }
+
+.progress-bar-warning {
+  background-color: #f46f1b;
+}
