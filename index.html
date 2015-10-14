@@ -58,6 +58,7 @@
                 <li class="disabled"><a href="#breast">Breast</a></li>
 	        <li><a href="#prostate">Prostate</a></li>
 		<li class="disabled"><a href="#skin">Skin</a></li>
+		<li><a href="#retino">Retinopathy</a></li>
 	        <li class="divider"></li>
 	        <li class="dropdown-header">COMPUTER VISION</li>
 	        <li class="disabled"><a href="#motion-segmentation">Motion Segmentation</a></li>
@@ -255,9 +256,20 @@
 			  <li><a href="#skin-benchmarking">Benchmarking</a></li>
 			  <li><a href="#skin-methods">Available methods</a></li>
 			</ul>
+		    </li>-->
+
+		    
+		    <li>
+		      <a href="#retino">Retinopathy</a>
+		      <ul class="nav">
+			<li><a href="#retino-data">Datasets</a></li>
+			<!--<li><a href="#prostate-evaluation">Evaluation tools</a></li>
+			    <li><a href="#prostate-benchmarking">Benchmarking</a></li>
+			<li><a href="#prostate-methods">Available methods</a></li>-->
+		      </ul>
 		    </li>
 
-		    <li>
+		    <!--<li>
 		      <a href="#motion-segmentation">Motion Segmentation</a>
 		      <ul class="nav">
 			<li><a href="#motion-segmentation-data">Datasets</a></li>
@@ -431,6 +443,112 @@
 		    </div>
 		  </div>
 		</div>
+
+		<div id="retino-bench" class="section-benchmark2">
+		  <div class="row equal">
+		    <!--<div class="col-sm-4 vcenter"></div><div class="col-sm-1 vcenter">
+			<img class="img-hand-orange" src="./images/logos/hand-orange.png">
+		    </div>--><div class="col-sm-12 vcenter">
+		      <h2 class="title-principle text-align-center" id="retino">Retinopathy</h2>
+		    </div><!--<div class="col-sm-4 vcenter"></div>-->
+		  </div>
+		  <!--<h2 class="title-principle" id="prostate">Prostate</h2>-->
+		  <!-- <div class="section-benchmark1 extra-padding-15"> -->
+		  <!--   <h3 class="first-par-benchmark" id="prostate-motivations">Motivations</h3> -->
+		  <!--   <p class="introduction-ubuntu"><font color="#f46f1b">Prostate cancer</font> (CaP) has been reported on a worldwide scale to be the second most frequently diagnosed cancer of men accounting for 13.6% (Ferlay et al. (2010)). Statistically, in 2008, the number of new diagnosed cases was estimated to be 899, 000 with no less than 258, 100 deaths (Ferlay et al. (2010)).</p> -->
+		  <!--   <p class="introduction-ubuntu">Magnetic resonance imaging (MRI) provides imaging techniques allowing to diagnose and localize CaP. The I2CVB provides a <font color="#f46f1b">multi-parametric MRI</font> dataset to help at the development of computer-aided detection and diagnosis (<font color="#f46f1b">CAD</font>) system.</p> -->
+		  <!-- </div> -->
+		  <div class="section-benchmark1 extra-padding-15">
+		    <h3 class="first-par-benchmark" id="prostate-data">Datasets</h3>
+		    <!-- <h4 class="h4-ubuntu">Graph highlights:</h4> -->
+		    <!-- <br> -->
+		    <!-- <img src="./images/dataset/prostate-dataset.png"  -->
+		    <!-- 	 alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" class="img-center"> -->
+		    <!-- <br> -->
+		    <!-- <br> -->
+		    <!-- <br> -->
+		    
+		    <!-- <h4 class="h4-ubuntu">Overview:</h4> -->
+		    <!-- <p class="par-ubuntu">In order to provide a wide dataset, the multi-parametric data have been acquired from two different commercial scanners: -->
+		    <!--   <ul> -->
+		    <!-- 	<li class="par-ubuntu">A <font color="#f46f1b">1.5 Tesla</font> General Electric (GE) scanner.</li> -->
+		    <!-- 	<li class="par-ubuntu">A <font color="#f46f1b">3.0 Tesla</font> Siemens scanner.</li> -->
+		    <!--   </ul> -->
+		    <!-- </p> -->
+		    <!-- <p class="par-ubuntu">Each subsect is composed of a total of <font color="#f46f1b">30 patients</font>: -->
+		    <!--   <ul> -->
+		    <!-- 	<li class="par-ubuntu">Twenty patients with biopsy proven CaP.</li> -->
+		    <!-- 	<li class="par-ubuntu">Ten "healthy" patients with negative biopsy results.</li> -->
+		    <!--   </ul> -->
+		    <!-- </p> -->
+		    <!-- <div class="vspace-30"></div> -->
+		    <!-- <h4 class="h4-ubuntu">Modalities:</h4> -->
+		    <!-- <p class="par-ubuntu">The I2CVB provides a multi-parametric MRI dataset. The modalities available the different dataset are: -->
+		    <!--   <ul> -->
+		    <!-- 	<li class="par-ubuntu">T<sub>2</sub>-Weighted (<font color="#f46f1b">T<sub>2</sub>-W</font>) MRI.</li> -->
+		    <!-- 	<li class="par-ubuntu">Dynamic Contrast Enhanced (<font color="#f46f1b">DCE</font>) MRI.</li> -->
+		    <!-- 	<li class="par-ubuntu">Diffusion Weighted Imaging (<font color="#f46f1b">DWI</font>) MRI.</li> -->
+		    <!-- 	<li class="par-ubuntu">Magnetic Resonance Spectroscopic Imaging (<font color="#f46f1b">MRSI</font>).</li> -->
+		    <!--   </ul> -->
+		    <!-- </p> -->
+		    <!-- <p class="par-ubuntu"> -->
+		    <!--   Furthermore, the additional Apparent Diffusion Coefficient (<font color="#f46f1b">ADC</font>) maps are provided for the data acquired with the Siemens scanner. -->
+		    <!-- </p> -->
+		    <!-- <div class="vspace-30"></div> -->
+		    <!-- <h4 class="h4-ubuntu">Image format:</h4> -->
+		    <!-- <p class="par-ubuntu">Regarding some technical aspects of the dataset, the T<sub>2</sub>-W MRI, DCE MRI and DWI MRI, ADC will be delivered in <font color="#f46f1b">DICOM</font> format.</p> -->
+		    <!-- <p class="par-ubuntu">Regarding the MRSI data will be either provided in <font color="#f46f1b">RDA</font> (Siemens) or <font color="#f46f1b">DICOM</font> (GE) format.</p> -->
+		    <!-- <p class="par-ubuntu">Finally all the ground-truth images for each modalities will be provided in <font color="#f46f1b">DICOM</font> format.</p> -->
+		    <!-- <div class="vspace-30"></div> -->
+		    <!-- <h4 class="h4-ubuntu">Ground-truth:</h4> -->
+		    <!-- <p class="par-ubuntu">For each modality, a set of ground-truth is provided. The ground-truth is composed of <font color="#f46f1b">four different classes</font>: (i) prostate gland, (ii) peripheral zone (PZ), (iii) central gland (CG), (iv) CaP.</p> -->
+		    <!-- <div class="vspace-30"></div> -->
+		    <div class="bs-callout bs-callout-warning">
+		      <h4>Download from here ...</h4>				    
+		      <p>There is still some ongoing work to provide the full dataset to the community. However, we are willing to give an overview of the dataset by providing a subset of the dataset in order to allow the community to perform diverse tests and give us feedbacks.</p>
+		      <p><strong>The dataset have been compressed into a single file which can be downloaded <a href="./data/retinopathy.zip">[HERE]</a>.</strong></p>
+		    </div>
+		  </div>
+		  <!-- Probably we should comment this section for the moment
+		       Let's come back when something is ready to be shared
+		       <div class="section-benchmark1 extra-padding-15">
+			 <h3 class="first-par-benchmark" id="prostate-evaluation">Evaluation tools</h3>
+			 <h4 class="h4-ubuntu">Segmentation:</h4>
+			 <p class="par-ubuntu"></p>
+			 <h4 class="h4-ubuntu">Registration:</h4>
+			 <p class="par-ubuntu"></p>
+			 <h4 class="h4-ubuntu">CAD evaluation:</h4>
+			 <p class="par-ubuntu"></p>
+			 <div class="bs-callout bs-callout-warning">
+			   <h4>Still under development ...</h4>
+			   <p>Once the full dataset will be available, evaluation metrics will be provided beside the dataset in order to evaluate the different algorithms developed in-house.</p>
+			 </div>
+		       </div>
+		       <div class="section-benchmark1 extra-padding-15">
+			 <h3 class="first-par-benchmark" id="prostate-benchmarking">Benchmarking</h3>
+			 <div class="bs-callout bs-callout-warning">
+			   <h4>Our future goals ...</h4>
+			   <p>Once that the dataset and the evaluation tool will be commonly used, we will compile and provide a benchmarking report.</p>
+			 </div>
+		       </div>
+		       <div class="section-benchmark1 extra-padding-15">
+			 <h3 class="first-par-benchmark" id="prostate-methods">Available methods</h3>
+			 <div class="bs-callout bs-callout-warning">
+			   <h4>What are we striving for ...</h4>
+			   <p>I2CVB encourages the research community to provide as much as possible information (e.g., code, research journals, etc.) in order to ensure reproducibility and transparency if the algorithms developed. In that manner, I2CVB is confident to boost future innovative work.</p>
+			 </div>
+		       </div>
+		       -->
+		  <!-- <div class="row"> -->
+		  <!--   <div class="col-xs-2 reference-section"></div><div class="col-xs-10"></div> -->
+		  <!-- </div> -->
+		  <!-- <div class="row"> -->
+		  <!--   <div class="col-xs-12"> -->
+		  <!--     <p class="reference">Ferlay, J., Shin, H.R., Bray, F., Forman, D., Mathers, C., Parkin, D.M., 2010. Estimates of worldwide burden of cancer in 2008: GLOBOCAN 2008. Int. J. Cancer 127, 2893–2917.</p> -->
+		  <!--   </div> -->
+		  <!-- </div> -->
+		</div>
+		
 		<!--<h2 class="title-principle" id="skin">Skin</h2>
 		    <h3 class="first-par" id="skin-data">Datasets</h3>
 		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
