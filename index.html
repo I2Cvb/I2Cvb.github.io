@@ -44,26 +44,21 @@
         
         <div class="collapse navbar-collapse navbar-ex1-collapse">
 	  <ul class="nav navbar-nav">
-            <li class="page-scroll">
-              <a href="#objectives"><i class="glyphicon glyphicon-home"></i> Home</a>
-            </li>
             <!--<li class="page-scroll">
                 <a href="#objectives">Strategy</a>
             </li>-->
 	    <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Benchmarks<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-home"></i> Benchmarks<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header">MEDICAL IMAGING</li>
-		<li class="disabled"><a href="#brain">Brain</a></li>
-                <li class="disabled"><a href="#breast">Breast</a></li>
 	        <li><a href="#prostate">Prostate</a></li>
-		<li class="disabled"><a href="#skin">Skin</a></li>
 		<li><a href="#retino">Retinopathy</a></li>
-	        <li class="divider"></li>
-	        <li class="dropdown-header">COMPUTER VISION</li>
-	        <li class="disabled"><a href="#motion-segmentation">Motion Segmentation</a></li>
+	        <!--<li class="divider"></li>-->
 	      </ul>
 	    </li>
+            <li class="page-scroll">
+              <a href="#objectives">About</a>
+            </li>
 	  </ul>
 	  <ul class="nav navbar-nav navbar-right">
  	    <li class="page-scroll">
@@ -124,7 +119,331 @@
 
 	  </section>-->
 
-	  <section id="objectives" class="home-section">
+	  <section class="home-section">
+	    <h2 class="page-header">Benchmarks</h2>
+	    <div class="row">
+	      <div class="col-sm-3">
+		<div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" role="complementary">
+		  <ul class="nav bs-docs-sidenav">
+		    
+		    <!--<li>
+			<a href="#brain">Brain</a>
+			<ul class="nav">
+			  <li><a href="#brain-data">Datasets</a></li>
+			  <li><a href="#brain-evaluation">Evaluation tools</a></li>
+			  <li><a href="#brain-benchmarking">Benchmarking</a></li>
+			  <li><a href="#brain-methods">Available methods</a></li>
+			</ul>
+		    </li>-->
+
+		    <!--<li>
+		      <a href="#breast">Breast</a>
+		      <ul class="nav">
+			<li><a href="#breast-data">Datasets</a></li>
+			<li><a href="#breast-evaluation">Evaluation tools</a></li>
+			    <li><a href="#breast-benchmarking">Benchmarking</a></li>
+			<li><a href="#breast-methods">Available methods</a></li>
+		      </ul>
+		    </li>-->
+
+		    <li>
+		      <a href="#prostate">Prostate</a>
+		      <ul class="nav">
+			<li><a href="#prostate-motivations">Motivations</a></li>
+			<li><a href="#prostate-data">Datasets</a></li>
+			<li><a href="#prostate-reporting">Publications</a></li>
+			<!--<li><a href="#prostate-evaluation">Evaluation tools</a></li>
+			    <li><a href="#prostate-benchmarking">Benchmarking</a></li>
+			<li><a href="#prostate-methods">Available methods</a></li>-->
+		      </ul>
+		    </li>
+
+		    <!--<li>
+			<a href="#skin">Skin</a>
+			<ul class="nav">
+			  <li><a href="#skin-data">Datasets</a></li>
+			  <li><a href="#skin-evaluation">Evaluation tools</a></li>
+			  <li><a href="#skin-benchmarking">Benchmarking</a></li>
+			  <li><a href="#skin-methods">Available methods</a></li>
+			</ul>
+		    </li>-->
+
+		    
+		    <li>
+		      <a href="#retino">Retinopathy</a>
+		      <ul class="nav">
+			<li><a href="#retino-motivations">Motivations</a></li>
+			<li><a href="#retino-data">Datasets</a></li>
+			<li><a href="#retino-reporting">Publications</a></li>
+			<!--<li><a href="#prostate-evaluation">Evaluation tools</a></li>
+			    <li><a href="#prostate-benchmarking">Benchmarking</a></li>
+			<li><a href="#prostate-methods">Available methods</a></li>-->
+		      </ul>
+		    </li>
+
+		    <!--<li>
+		      <a href="#motion-segmentation">Motion Segmentation</a>
+		      <ul class="nav">
+			<li><a href="#motion-segmentation-data">Datasets</a></li>
+			<li><a href="#motion-segmentation-evaluation">Evaluation tools</a></li>
+			<li><a href="#motion-segmentation-benchmarking">Benchmarking</a></li>
+			<li><a href="#motion-segmentation-methods">Available methods</a></li>
+		      </ul>
+		    </li>-->
+
+		  </ul>
+		  
+		</div>
+		
+	      </div><div class="col-sm-9">
+		<div id="prostate-bench" class="section-benchmark2">
+		  <div class="row equal">
+		    <div class="col-sm-12 vcenter">
+		      <h2 class="title-principle text-align-center" id="prostate">Prostate</h2>
+		    </div>
+		  </div>
+		  <div class="section-benchmark1 extra-padding-15">
+		    <h3 class="first-par-benchmark" id="prostate-motivations">Motivations</h3>
+		    <p class="introduction-ubuntu"><font color="#f46f1b">Prostate cancer</font> (CaP) has been reported on a worldwide scale to be the second most frequently diagnosed cancer of men accounting for 13.6% (Ferlay et al. (2010)). Statistically, in 2008, the number of new diagnosed cases was estimated to be 899, 000 with no less than 258, 100 deaths (Ferlay et al. (2010)).</p>
+		    <p class="introduction-ubuntu">Magnetic resonance imaging (MRI) provides imaging techniques allowing to diagnose and localize CaP. The I2CVB provides a <font color="#f46f1b">multi-parametric MRI</font> dataset to help at the development of computer-aided detection and diagnosis (<font color="#f46f1b">CAD</font>) system.</p>
+		  </div>
+		  <div class="section-benchmark1 extra-padding-15">
+		    <h3 class="first-par-benchmark" id="prostate-data">Datasets</h3>
+		    <h4 class="h4-ubuntu">Graph highlights:</h4>
+		    <br>
+		    <img src="./images/dataset/prostate-dataset.png" 
+			 alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" class="img-center">
+		    <br>
+		    <br>
+		    <br>
+		    
+		    <h4 class="h4-ubuntu">Overview:</h4>
+		    <p class="par-ubuntu">In order to provide a wide dataset, the multi-parametric data have been acquired from two different commercial scanners:
+		      <ul>
+			<li class="par-ubuntu">A <font color="#f46f1b">1.5 Tesla</font> General Electric (GE) scanner.</li>
+			<li class="par-ubuntu">A <font color="#f46f1b">3.0 Tesla</font> Siemens scanner.</li>
+		      </ul>
+		    </p>
+		    <p class="par-ubuntu">Each subsect is composed of a total of <font color="#f46f1b">30 patients</font>:
+		      <ul>
+			<li class="par-ubuntu">Twenty patients with biopsy proven CaP.</li>
+			<li class="par-ubuntu">Ten "healthy" patients with negative biopsy results.</li>
+		      </ul>
+		    </p>
+		    <div class="vspace-30"></div>
+		    <h4 class="h4-ubuntu">Modalities:</h4>
+		    <p class="par-ubuntu">The I2CVB provides a multi-parametric MRI dataset. The modalities available the different dataset are:
+		      <ul>
+			<li class="par-ubuntu">T<sub>2</sub>-Weighted (<font color="#f46f1b">T<sub>2</sub>-W</font>) MRI.</li>
+			<li class="par-ubuntu">Dynamic Contrast Enhanced (<font color="#f46f1b">DCE</font>) MRI.</li>
+			<li class="par-ubuntu">Diffusion Weighted Imaging (<font color="#f46f1b">DWI</font>) MRI.</li>
+			<li class="par-ubuntu">Magnetic Resonance Spectroscopic Imaging (<font color="#f46f1b">MRSI</font>).</li>
+		      </ul>
+		    </p>
+		    <p class="par-ubuntu">
+		      Furthermore, the additional Apparent Diffusion Coefficient (<font color="#f46f1b">ADC</font>) maps are provided for the data acquired with the Siemens scanner.
+		    </p>
+		    <div class="vspace-30"></div>
+		    <h4 class="h4-ubuntu">Image format:</h4>
+		    <p class="par-ubuntu">Regarding some technical aspects of the dataset, the T<sub>2</sub>-W MRI, DCE MRI and DWI MRI, ADC will be delivered in <font color="#f46f1b">DICOM</font> format.</p>
+		    <p class="par-ubuntu">Regarding the MRSI data will be either provided in <font color="#f46f1b">RDA</font> (Siemens) or <font color="#f46f1b">DICOM</font> (GE) format.</p>
+		    <p class="par-ubuntu">Finally all the ground-truth images for each modalities will be provided in <font color="#f46f1b">DICOM</font> format.</p>
+		    <div class="vspace-30"></div>
+		    <h4 class="h4-ubuntu">Ground-truth:</h4>
+		    <p class="par-ubuntu">For each modality, a set of ground-truth is provided. The ground-truth is composed of <font color="#f46f1b">four different classes</font>: (i) prostate gland, (ii) peripheral zone (PZ), (iii) central gland (CG), (iv) CaP.</p>
+		    <div class="vspace-30"></div>
+		    <h4 class="h4-ubuntu">Citation:</h4>
+		    <p class="par-ubuntu">If you use this dataset for scientific publication, cite the following:</p>
+		    <p class="par-ubuntu"><strong>G. Lemaitre, R. Marti, J. Freixenet, J. C. Vilanova, P. M. Walker, and F. Meriaudeau,</strong> "Computer-Aided Detection and Diagnosis for prostate cancer based on mono and multi-parametric MRI: A Review", <i>Computer in Biology and Medicine</i>, vol. 60, pp 8 - 31, 2015. <a href="http://www.sciencedirect.com/science/article/pii/S001048251500058X">[link]</a></p>
+		    <div class="vspace-30"></div>
+		    <div class="bs-callout bs-callout-warning">
+		      <h4>Give us your feedbacks ...</h4>				    
+		      <p>There is still some ongoing work to provide the full dataset to the community. However, we are willing to give an overview of the dataset by providing a subset of the dataset in order to allow the community to perform diverse tests and give us feedbacks.</p>
+		      <p>Dataset readiness ...</p>
+		      <div class="progress">
+			<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 75%"> 75%
+			  <span class="sr-only">75% Complete</span>
+			</div>
+		      </div>
+		      <!--<p><strong>The dataset have been compressed into a single file which can be downloaded <a href="./data/prostate-benchmark.tar.gz">[HERE]</a>.</strong></p>-->
+		    </div>
+		  </div>
+		  <div class="section-benchmark1 extra-padding-15">
+		    <h3 class="first-par-benchmark" id="prostate-reporting">Publications</h3>
+		    <p class="par-ubuntu">The following list of publications used our dataset. Refer to them regarding a description of the algorithms and a summary of the results. We encourage the authors to provide in some way (Github, ...) the source code.</p>
+		    <p class="par-ubuntu">Your publication does not appear in this webpage, please contact us with all the necessary information.</p>
+		    <div class="vspace-30"></div>
+		    <h4 class="h4-ubuntu" id="prostate-bibtex">Related publications:</h4>
+		    <p class="par-ubuntu"><strong>R. Trigui, J. Mitéran, P. M. Walker, L. Sellami, and A. B. Hamida,</strong> "Automatic classification and localization of prostate cancer using multi-parametric MRI/MRS", <i>Biomedical Signal Processing and Control</i> vol. 31, pp 189 - 198, January 2017. <a href="http://www.sciencedirect.com/science/article/pii/S1746809416300957">[pdf]</a>
+		    <p class="par-ubuntu"><strong>A. Fabijańska,</strong> "A novel approach for quantification of time–intensity curves in a DCE-MRI image series with an application to prostate cancer", <i>Computer in Biology and Medicine</i> vol. 73, pp 119 - 130, June 2016. <a href="http://www.sciencedirect.com/science/article/pii/S0010482516301007">[pdf]</a>
+		    <p class="par-ubuntu"><strong>R. Trigui, J. Mitéran, L. Sellami, P. M. Walker, and A. B. Hamida,</strong> "A classification approach to prostate cancer localization in 3T multi-parametric MRI", <i>2nd International Conference on Advanced Technologies for Signal and Image Processing (ATSIP) 2016.</i> Monastir: Tunisia (March 2016). <a href="http://ieeexplore.ieee.org/document/7523064/">[pdf]</a>
+		    <p class="par-ubuntu"><strong>G. Lemaitre, M. Rastgoo, J. Massich, J. C. Vilanova, P. M. Walker, J. Freixenet, A. Meyer-Baese, F. Meriaudeau, and R. Marti,</strong> "Normalization of T2W-MRI prostate images using Rician a priori", <i>SPIE Medical Imaging 2016.</i> San Diego: USA (February 2016). <a href="https://hal-univ-bourgogne.archives-ouvertes.fr/hal-01265774v1">[pdf]</a> <a href="https://github.com/I2Cvb/prostate">[source]</a>
+		    <p class="par-ubuntu"><strong>G. Lemaitre, J. Massich, R. Marti, J. Freixenet, J. C. Vilanova, P. M. Walker, D. Sidibe, and F. Meriaudeau,</strong> "A Boosting Approach for Prostate Cancer Detection using Multi-parametric MRI", <i>International Conference on Quality Control and Artificial Vision (QCAV) 2015.</i> Le Creusot: France (June 2015). <a href="https://hal-univ-bourgogne.archives-ouvertes.fr/hal-01235890">[pdf]</a> <a href="https://github.com/I2Cvb/prostate">[source]</a>
+		    <p class="par-ubuntu"><strong>G. Lemaitre, R. Marti, J. Freixenet, J. C. Vilanova, P. M. Walker, and F. Meriaudeau,</strong> "Computer-Aided Detection and Diagnosis for prostate cancer based on mono and multi-parametric MRI: A Review", <i>Computer in Biology and Medicine</i> vol. 60, pp 8 - 31, May 2015. <a href="https://hal-univ-bourgogne.archives-ouvertes.fr/hal-01235868">[pdf]</a>
+		    <div class="vspace-30"></div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-2 reference-section"></div><div class="col-xs-10"></div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-12">
+		      <p class="reference">Ferlay, J., Shin, H.R., Bray, F., Forman, D., Mathers, C., Parkin, D.M., 2010. Estimates of worldwide burden of cancer in 2008: GLOBOCAN 2008. Int. J. Cancer 127, 2893–2917.</p>
+		    </div>
+		  </div>
+		</div>
+
+
+		<div id="retino-bench" class="section-benchmark2">
+		  <div class="row equal">
+		    <!--<div class="col-sm-4 vcenter"></div><div class="col-sm-1 vcenter">
+			<img class="img-hand-orange" src="./images/logos/hand-orange.png">
+		    </div>--><div class="col-sm-12 vcenter">
+		      <h2 class="title-principle text-align-center" id="retino">Retinopathy</h2>
+		    </div><!--<div class="col-sm-4 vcenter"></div>-->
+		  </div>
+		  <div class="section-benchmark1 extra-padding-15">
+		    <h3 class="first-par-benchmark" id="retino-motivations">Motivations</h3>
+
+		    <p class="introduction-ubuntu"><font color="#f46f1b">Diabetic Retinopathy (DR)</font>, and more particularly <font color="#f46f1b">Diabetic Macular Edema (DME)</font>, are leading causes of irreversible vision loss and the most common eye diseases in individuals with diabetes.</p>
+		    <p class="introduction-ubuntu"> Taking into account that the number of individuals affected by diabetes dieases are expected to grow exponentially in the next decade (Wild et al. (2014)), developing methodologies for early detection and treatment of DR and DME has become a priority to prevent adverse effects.</p>
+		  </div>
+		  <div class="section-benchmark1 extra-padding-15">
+		    <h3 class="first-par-benchmark" id="prostate-data">Datasets</h3>
+		    <!-- <h4 class="h4-ubuntu">Graph highlights:</h4> -->
+		    <!-- <br> -->
+		    <!-- <img src="./images/dataset/prostate-dataset.png"  -->
+		    <!-- 	 alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" class="img-center"> -->
+		    <!-- <br> -->
+		    <!-- <br> -->
+		    <!-- <br> -->
+		    
+		    <!-- <h4 class="h4-ubuntu">Overview:</h4> -->
+		    <!-- <p class="par-ubuntu">In order to provide a wide dataset, the multi-parametric data have been acquired from two different commercial scanners: -->
+		    <!--   <ul> -->
+		    <!-- 	<li class="par-ubuntu">A <font color="#f46f1b">1.5 Tesla</font> General Electric (GE) scanner.</li> -->
+		    <!-- 	<li class="par-ubuntu">A <font color="#f46f1b">3.0 Tesla</font> Siemens scanner.</li> -->
+		    <!--   </ul> -->
+		    <!-- </p> -->
+		    <!-- <p class="par-ubuntu">Each subsect is composed of a total of <font color="#f46f1b">30 patients</font>: -->
+		    <!--   <ul> -->
+		    <!-- 	<li class="par-ubuntu">Twenty patients with biopsy proven CaP.</li> -->
+		    <!-- 	<li class="par-ubuntu">Ten "healthy" patients with negative biopsy results.</li> -->
+		    <!--   </ul> -->
+		    <!-- </p> -->
+		    <!-- <div class="vspace-30"></div> -->
+		    <!-- <h4 class="h4-ubuntu">Modalities:</h4> -->
+		    <!-- <p class="par-ubuntu">The I2CVB provides a multi-parametric MRI dataset. The modalities available the different dataset are: -->
+		    <!--   <ul> -->
+		    <!-- 	<li class="par-ubuntu">T<sub>2</sub>-Weighted (<font color="#f46f1b">T<sub>2</sub>-W</font>) MRI.</li> -->
+		    <!-- 	<li class="par-ubuntu">Dynamic Contrast Enhanced (<font color="#f46f1b">DCE</font>) MRI.</li> -->
+		    <!-- 	<li class="par-ubuntu">Diffusion Weighted Imaging (<font color="#f46f1b">DWI</font>) MRI.</li> -->
+		    <!-- 	<li class="par-ubuntu">Magnetic Resonance Spectroscopic Imaging (<font color="#f46f1b">MRSI</font>).</li> -->
+		    <!--   </ul> -->
+		    <!-- </p> -->
+		    <!-- <p class="par-ubuntu"> -->
+		    <!--   Furthermore, the additional Apparent Diffusion Coefficient (<font color="#f46f1b">ADC</font>) maps are provided for the data acquired with the Siemens scanner. -->
+		    <!-- </p> -->
+		    <!-- <div class="vspace-30"></div> -->
+		    <!-- <h4 class="h4-ubuntu">Image format:</h4> -->
+		    <!-- <p class="par-ubuntu">Regarding some technical aspects of the dataset, the T<sub>2</sub>-W MRI, DCE MRI and DWI MRI, ADC will be delivered in <font color="#f46f1b">DICOM</font> format.</p> -->
+		    <!-- <p class="par-ubuntu">Regarding the MRSI data will be either provided in <font color="#f46f1b">RDA</font> (Siemens) or <font color="#f46f1b">DICOM</font> (GE) format.</p> -->
+		    <!-- <p class="par-ubuntu">Finally all the ground-truth images for each modalities will be provided in <font color="#f46f1b">DICOM</font> format.</p> -->
+		    <!-- <div class="vspace-30"></div> -->
+		    <!-- <h4 class="h4-ubuntu">Ground-truth:</h4> -->
+		    <!-- <p class="par-ubuntu">For each modality, a set of ground-truth is provided. The ground-truth is composed of <font color="#f46f1b">four different classes</font>: (i) prostate gland, (ii) peripheral zone (PZ), (iii) central gland (CG), (iv) CaP.</p> -->
+		    <!-- <div class="vspace-30"></div> -->
+		  <!-- Probably we should comment this section for the moment
+		       Let's come back when something is ready to be shared
+		       <div class="section-benchmark1 extra-padding-15">
+			 <h3 class="first-par-benchmark" id="prostate-evaluation">Evaluation tools</h3>
+			 <h4 class="h4-ubuntu">Segmentation:</h4>
+			 <p class="par-ubuntu"></p>
+			 <h4 class="h4-ubuntu">Registration:</h4>
+			 <p class="par-ubuntu"></p>
+			 <h4 class="h4-ubuntu">CAD evaluation:</h4>
+			 <p class="par-ubuntu"></p>
+			 <div class="bs-callout bs-callout-warning">
+			   <h4>Still under development ...</h4>
+			   <p>Once the full dataset will be available, evaluation metrics will be provided beside the dataset in order to evaluate the different algorithms developed in-house.</p>
+			 </div>
+		       </div>
+		       <div class="section-benchmark1 extra-padding-15">
+			 <h3 class="first-par-benchmark" id="prostate-benchmarking">Benchmarking</h3>
+			 <div class="bs-callout bs-callout-warning">
+			   <h4>Our future goals ...</h4>
+			   <p>Once that the dataset and the evaluation tool will be commonly used, we will compile and provide a benchmarking report.</p>
+			 </div>
+		       </div>
+		       <div class="section-benchmark1 extra-padding-15">
+			 <h3 class="first-par-benchmark" id="prostate-methods">Available methods</h3>
+			 <div class="bs-callout bs-callout-warning">
+			   <h4>What are we striving for ...</h4>
+			   <p>I2CVB encourages the research community to provide as much as possible information (e.g., code, research journals, etc.) in order to ensure reproducibility and transparency if the algorithms developed. In that manner, I2CVB is confident to boost future innovative work.</p>
+			 </div>
+		       </div>
+		       -->
+		  </div>
+		  <div class="section-benchmark1 extra-padding-15">
+		    <h3 class="first-par-benchmark" id="retino-reporting">Publications</h3>
+		    <p class="par-ubuntu">The following list of publications used our dataset. Refer to them regarding a description of the algorithms and a summary of the results. We encourage the authors to provide in some way (Github, ...) the source code.</p>
+		    <p class="par-ubuntu">Your publication does not appear in this webpage, please contact us with all the necessary information.</p>
+		    <div class="vspace-30"></div>
+		    <h4 class="h4-ubuntu" id="prostate-bibtex">Related publications:</h4>
+		    <p class="par-ubuntu"><strong>J. Massich, M. Rastgoo, G. Lemaitre, C. Y. Cheung, T. Y. Wong, D. Sidibe, and F. Meriaudeau,</strong> "Classifying DME vs Normal SD-OCT volumes: A review", <i>23rd International Conference on Pattern Recognition (ICPR) 2016.</i> Cancun: Mexico (December 2016). [pdf] <a href="https://github.com/I2Cvb/retinopathy/tree/master/pipeline">[source]</a>
+		    <p class="par-ubuntu"><strong>K. Alsaih, G. Lemaitre, J. Massich, M. Rastgoo, D. Sidibe, T. Y. Wong, E. Lamoureux, D. Milea, C. Leung, and F. Meriaudeau,</strong> "Classification of SD-OCT volumes with multi-pyramids, LBP and HoG descriptors: Application to DME detection", <i>38th International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) 2016.</i> Orlando: USA (August 2016). <a href="https://hal-univ-bourgogne.archives-ouvertes.fr/hal-01320212">[pdf]</a> <a href="https://github.com/I2Cvb/alsaih-2016-aug">[source]</a>
+		    <p class="par-ubuntu"><strong>G. Lemaitre, M. Rastgoo, J. Massich, C. Y. Cheung, T. Y. Wong, E. Lamoureux, D. Milea, F. Meriaudeau, and D. Sidibe,</strong> "Classification of SD-OCT Volumes using Local Binary Patterns: Experimental Validation for DME detection", <i>Journal of Ophthalmology</i> vol 2016, Mai 2016. <a href="https://hal-univ-bourgogne.archives-ouvertes.fr/hal-01320791">[pdf]</a> <a href="http://dx.doi.org/10.5281/zenodo.34277">[source]</a>
+		    <p class="par-ubuntu"><strong>G. Lemaitre, M. Rastgoo, J. Massich, S. Sankar, F. Meriaudeau, and D. Sidibe,</strong> "Classification of SD-OCT volumes with LBP: Application to DME detection", <i>Ophthalmic Medical Image Analysis Workshop (OMIA), Medical Image Computing and Computer Assisted Interventions (MICCAI) 2015</i> Munich: Germany (October 2015). <a href="https://hal-univ-bourgogne.archives-ouvertes.fr/hal-01235888">[pdf]</a> <a href="http://dx.doi.org/10.5281/zenodo.22195">[source]</a>
+		    <div class="vspace-30"></div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-2 reference-section"></div><div class="col-xs-10"></div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-12">
+		      <p class="reference"> Wild, S., Roglic, G., Green, A., Sicree, R., & King, H. (2004). Global prevalence of diabetes estimates for the year 2000 and projections for 2030. Diabetes care, 27(5), 1047-1053.</p>
+		    </div>
+		  </div>
+		</div>
+		
+		<!--<h2 class="title-principle" id="skin">Skin</h2>
+		    <h3 class="first-par" id="skin-data">Datasets</h3>
+		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
+		<h3 class="first-par" id="skin-evaluation">Evaluation tools</h3>
+		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
+		<h3 class="first-par" id="skin-benchmarking">Benchmarking</h3>
+		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
+		<h3 class="first-par" id="skin-methods">Available methods</h3>
+		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
+		<h2 class="title-principle" id="motion-segmentation">Motion Segmentation</h2>
+		<h3 class="first-par" id="motion-segmentation-data">Datasets</h3>
+		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
+		<h3 class="first-par" id="motion-segmentation-evaluation">Evaluation tools</h3>
+		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
+		<h3 class="first-par" id="motion-segmentation-benchmarking">Benchmarking</h3>
+		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
+		<h3 class="first-par" id="motion-segmentation-methods">Available methods</h3>
+		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
+
+		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
+	      </div>-->
+	      </div>
+	  </section>
+
+	  <section id="objectives" class="benchmark-section">
 	    <h2 class="page-header">ICCVB in a nutshell</h2>
 	    
 	    <div class="row equal row-principle-no-border">
@@ -208,460 +527,6 @@
 		<p class="main-text">I2CVB thanks the different collaborators with whom this initiative came into being.</p>
 	      </div>
 	    </div>
-	  </section>
-
-	  <section class="benchmark-section">
-	    <h2 class="page-header">Benchmarks</h2>
-	    <div class="row">
-	      <div class="col-sm-3">
-		<div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" role="complementary">
-		  <ul class="nav bs-docs-sidenav">
-		    
-		    <!--<li>
-			<a href="#brain">Brain</a>
-			<ul class="nav">
-			  <li><a href="#brain-data">Datasets</a></li>
-			  <li><a href="#brain-evaluation">Evaluation tools</a></li>
-			  <li><a href="#brain-benchmarking">Benchmarking</a></li>
-			  <li><a href="#brain-methods">Available methods</a></li>
-			</ul>
-		    </li>-->
-
-		    <!--<li>
-		      <a href="#breast">Breast</a>
-		      <ul class="nav">
-			<li><a href="#breast-data">Datasets</a></li>
-			<li><a href="#breast-evaluation">Evaluation tools</a></li>
-			    <li><a href="#breast-benchmarking">Benchmarking</a></li>
-			<li><a href="#breast-methods">Available methods</a></li>
-		      </ul>
-		    </li>-->
-
-		    <li>
-		      <a href="#prostate">Prostate</a>
-		      <ul class="nav">
-			<li><a href="#prostate-motivations">Motivations</a></li>
-			<li><a href="#prostate-data">Datasets</a></li>
-			<!--<li><a href="#prostate-evaluation">Evaluation tools</a></li>
-			    <li><a href="#prostate-benchmarking">Benchmarking</a></li>
-			<li><a href="#prostate-methods">Available methods</a></li>-->
-		      </ul>
-		    </li>
-
-		    <!--<li>
-			<a href="#skin">Skin</a>
-			<ul class="nav">
-			  <li><a href="#skin-data">Datasets</a></li>
-			  <li><a href="#skin-evaluation">Evaluation tools</a></li>
-			  <li><a href="#skin-benchmarking">Benchmarking</a></li>
-			  <li><a href="#skin-methods">Available methods</a></li>
-			</ul>
-		    </li>-->
-
-		    
-		    <li>
-		      <a href="#retino">Retinopathy</a>
-		      <ul class="nav">
-			<li><a href="#retino-data">Datasets</a></li>
-			<!--<li><a href="#prostate-evaluation">Evaluation tools</a></li>
-			    <li><a href="#prostate-benchmarking">Benchmarking</a></li>
-			<li><a href="#prostate-methods">Available methods</a></li>-->
-		      </ul>
-		    </li>
-
-		    <!--<li>
-		      <a href="#motion-segmentation">Motion Segmentation</a>
-		      <ul class="nav">
-			<li><a href="#motion-segmentation-data">Datasets</a></li>
-			<li><a href="#motion-segmentation-evaluation">Evaluation tools</a></li>
-			<li><a href="#motion-segmentation-benchmarking">Benchmarking</a></li>
-			<li><a href="#motion-segmentation-methods">Available methods</a></li>
-		      </ul>
-		    </li>-->
-
-		  </ul>
-		  
-		</div>
-		
-	      </div><div class="col-sm-9">
-		<!--<h2 class="title-principle" id="brain">Brain</h2>
-		    <h3 class="first-par" id="brain-data">Datasets</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h3 class="first-par" id="brain-evaluation">Evaluation tools</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h3 class="first-par" id="brain-benchmarking">Benchmarking</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h3 class="first-par" id="brain-methods">Available methods</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		-->
-		<!--<div id="breast-bench" class="section-benchmark2">
-		  <div class="row equal">
-		    <div class="col-sm-12 vcenter">
-		      <h2 class="title-principle text-align-center" id="breast">Breast</h2>
-		    </div>
-		  </div>
-		  <div class="section-benchmark1 extra-padding-15">
-		    <h3 class="first-par-benchmark" id="breast-data">Datasets</h3>
-		    <p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		      To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		  </div>
-		  <div class="section-benchmark1 extra-padding-15">
-		    <h3 class="first-par-benchmark" id="breast-evaluation">Evaluation tools</h3>
-		    <p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		      To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		  </div>
-		  <div class="section-benchmark1 extra-padding-15">
-		    <h3 class="first-par-benchmark" id="breast-benchmarking">Benchmarking</h3>
-		    <p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		      To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		  </div>
-		  <div class="section-benchmark1 extra-padding-15">
-		    <h3 class="first-par-benchmark" id="breast-methods">Available methods</h3>
-		    <p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		      To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		  </div>
-		</div>-->
-		<div id="prostate-bench" class="section-benchmark2">
-		  <div class="row equal">
-		    <!--<div class="col-sm-4 vcenter"></div><div class="col-sm-1 vcenter">
-			<img class="img-hand-orange" src="./images/logos/hand-orange.png">
-		    </div>--><div class="col-sm-12 vcenter">
-		      <h2 class="title-principle text-align-center" id="prostate">Prostate</h2>
-		    </div><!--<div class="col-sm-4 vcenter"></div>-->
-		  </div>
-		  <!--<h2 class="title-principle" id="prostate">Prostate</h2>-->
-		  <div class="section-benchmark1 extra-padding-15">
-		    <h3 class="first-par-benchmark" id="prostate-motivations">Motivations</h3>
-		    <p class="introduction-ubuntu"><font color="#f46f1b">Prostate cancer</font> (CaP) has been reported on a worldwide scale to be the second most frequently diagnosed cancer of men accounting for 13.6% (Ferlay et al. (2010)). Statistically, in 2008, the number of new diagnosed cases was estimated to be 899, 000 with no less than 258, 100 deaths (Ferlay et al. (2010)).</p>
-		    <p class="introduction-ubuntu">Magnetic resonance imaging (MRI) provides imaging techniques allowing to diagnose and localize CaP. The I2CVB provides a <font color="#f46f1b">multi-parametric MRI</font> dataset to help at the development of computer-aided detection and diagnosis (<font color="#f46f1b">CAD</font>) system.</p>
-		  </div>
-		  <div class="section-benchmark1 extra-padding-15">
-		    <h3 class="first-par-benchmark" id="prostate-data">Datasets</h3>
-		    <h4 class="h4-ubuntu">Graph highlights:</h4>
-		    <br>
-		    <img src="./images/dataset/prostate-dataset.png" 
-			 alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" class="img-center">
-		    <br>
-		    <br>
-		    <br>
-		    
-		    <h4 class="h4-ubuntu">Overview:</h4>
-		    <p class="par-ubuntu">In order to provide a wide dataset, the multi-parametric data have been acquired from two different commercial scanners:
-		      <ul>
-			<li class="par-ubuntu">A <font color="#f46f1b">1.5 Tesla</font> General Electric (GE) scanner.</li>
-			<li class="par-ubuntu">A <font color="#f46f1b">3.0 Tesla</font> Siemens scanner.</li>
-		      </ul>
-		    </p>
-		    <p class="par-ubuntu">Each subsect is composed of a total of <font color="#f46f1b">30 patients</font>:
-		      <ul>
-			<li class="par-ubuntu">Twenty patients with biopsy proven CaP.</li>
-			<li class="par-ubuntu">Ten "healthy" patients with negative biopsy results.</li>
-		      </ul>
-		    </p>
-		    <div class="vspace-30"></div>
-		    <h4 class="h4-ubuntu">Modalities:</h4>
-		    <p class="par-ubuntu">The I2CVB provides a multi-parametric MRI dataset. The modalities available the different dataset are:
-		      <ul>
-			<li class="par-ubuntu">T<sub>2</sub>-Weighted (<font color="#f46f1b">T<sub>2</sub>-W</font>) MRI.</li>
-			<li class="par-ubuntu">Dynamic Contrast Enhanced (<font color="#f46f1b">DCE</font>) MRI.</li>
-			<li class="par-ubuntu">Diffusion Weighted Imaging (<font color="#f46f1b">DWI</font>) MRI.</li>
-			<li class="par-ubuntu">Magnetic Resonance Spectroscopic Imaging (<font color="#f46f1b">MRSI</font>).</li>
-		      </ul>
-		    </p>
-		    <p class="par-ubuntu">
-		      Furthermore, the additional Apparent Diffusion Coefficient (<font color="#f46f1b">ADC</font>) maps are provided for the data acquired with the Siemens scanner.
-		    </p>
-		    <div class="vspace-30"></div>
-		    <h4 class="h4-ubuntu">Image format:</h4>
-		    <p class="par-ubuntu">Regarding some technical aspects of the dataset, the T<sub>2</sub>-W MRI, DCE MRI and DWI MRI, ADC will be delivered in <font color="#f46f1b">DICOM</font> format.</p>
-		    <p class="par-ubuntu">Regarding the MRSI data will be either provided in <font color="#f46f1b">RDA</font> (Siemens) or <font color="#f46f1b">DICOM</font> (GE) format.</p>
-		    <p class="par-ubuntu">Finally all the ground-truth images for each modalities will be provided in <font color="#f46f1b">DICOM</font> format.</p>
-		    <div class="vspace-30"></div>
-		    <h4 class="h4-ubuntu">Ground-truth:</h4>
-		    <p class="par-ubuntu">For each modality, a set of ground-truth is provided. The ground-truth is composed of <font color="#f46f1b">four different classes</font>: (i) prostate gland, (ii) peripheral zone (PZ), (iii) central gland (CG), (iv) CaP.</p>
-		    <div class="vspace-30"></div>
-		    <h4 class="h4-ubuntu">Citation:</h4>
-		    <p class="par-ubuntu">If you use this dataset for scientific publication, cite the following:</p>
-		    <p class="par-ubuntu"><strong>G. Lemaitre, R. Marti, J. Freixenet, J. C. Vilanova, P. M. Walker, and F. Meriaudeau,</strong> "Computer-Aided Detection and Diagnosis for prostate cancer based on mono and multi-parametric MRI: A Review", <i>Computer in Biology and Medicine</i>, vol. 60, pp 8 - 31, 2015. <a href="http://www.sciencedirect.com/science/article/pii/S001048251500058X">[link]</a></p>
-		    <div class="vspace-30"></div>
-		    <div class="bs-callout bs-callout-warning">
-		      <h4>Give us your feedbacks ...</h4>				    
-		      <p>There is still some ongoing work to provide the full dataset to the community. However, we are willing to give an overview of the dataset by providing a subset of the dataset in order to allow the community to perform diverse tests and give us feedbacks.</p>
-		      <p>Dataset readiness ...</p>
-		      <div class="progress">
-			<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 75%"> 75%
-			  <span class="sr-only">75% Complete</span>
-			</div>
-		      </div>
-		      <!--<p><strong>The dataset have been compressed into a single file which can be downloaded <a href="./data/prostate-benchmark.tar.gz">[HERE]</a>.</strong></p>-->
-		    </div>
-		  </div>
-		  <div class="section-benchmark1 extra-padding-15">
-		    <h3 class="first-par-benchmark" id="prostate-reporting">Reporting</h3>
-		    <p class="par-ubuntu">The following list of publications used our dataset. Refer to them regarding a description of the algorithms and a summary of the results. We encourage the authors to provide in some way (Github, ...) the source code.</p>
-		    <p class="par-ubuntu">Your publication does not appear in this webpage, please contact us with all the necessary information.</p>
-		    <div class="vspace-30"></div>
-		    <h4 class="h4-ubuntu" id="prostate-bibtex">Related publications:</h4>
-	<table>
-
-<tr valign="top">
-<td align="right" class="bibtexnumber">
-[<a name="lemaitre2011absolute">1</a>]
-</td>
-<td class="bibtexitem">
-Guillaume Lemaitre and Paul&nbsp;Michael Walker.
- <em>Absolute Quantification in H MRSI of the Prostate at 3T</em>.
- PhD thesis, Master’s thesis, Universit&eacute; de Bourgogne,
-  Universitat de Girona, Heriot-Watt University (June 2011), 2011.
-[&nbsp;<a href="i2cvb-prostate-bibtex_bib.html#lemaitre2011absolute">bib</a>&nbsp;]
-
-</td>
-</tr>
-
-
-<tr valign="top">
-<td align="right" class="bibtexnumber">
-[<a name="lemaitre2015computer">2</a>]
-</td>
-<td class="bibtexitem">
-Guillaume Lema&icirc;tre, Robert Mart&iacute;, Jordi Freixenet, Joan&nbsp;C Vilanova,
-  Paul&nbsp;M Walker, and Fabrice Meriaudeau.
- Computer-aided detection and diagnosis for prostate cancer based on
-  mono and multi-parametric mri: A review.
- <em>Computers in biology and medicine</em>, 60:8--31, 2015.
-[&nbsp;<a href="i2cvb-prostate-bibtex_bib.html#lemaitre2015computer">bib</a>&nbsp;]
-
-</td>
-</tr>
-
-
-<tr valign="top">
-<td align="right" class="bibtexnumber">
-[<a name="lemaitre2015boosting">3</a>]
-</td>
-<td class="bibtexitem">
-Guillaume Lemaitre, Joan Massich, Robert Mart&iacute;, Jordi Freixenet, Joan&nbsp;C
-  Vilanova, Paul&nbsp;M Walker, D&eacute;sir&eacute; Sidib&eacute;, and Fabrice
-  M&eacute;riaudeau.
- A boosting approach for prostate cancer detection using
-  multi-parametric mri.
- In <em>The International Conference on Quality Control by Artificial
-  Vision 2015</em>, pages 95340A--95340A. International Society for Optics and
-  Photonics, 2015.
-[&nbsp;<a href="i2cvb-prostate-bibtex_bib.html#lemaitre2015boosting">bib</a>&nbsp;]
-
-</td>
-</tr>
-
-
-<tr valign="top">
-<td align="right" class="bibtexnumber">
-[<a name="lemaitre2016normalization">4</a>]
-</td>
-<td class="bibtexitem">
-Guillaume Lemaitre, Mojdeh&nbsp;Rastgo Dastjerdi, Joan Massich, Joan&nbsp;C Vilanova,
-  Paul&nbsp;M Walker, Jordi Freixenet, Anke Meyer-Baese, Fabrice M&eacute;riaudeau, and
-  Robert Marti.
- Normalization of t2w-mri prostate images using rician a priori.
- In <em>SPIE Medical Imaging</em>, pages 978529--978529. International
-  Society for Optics and Photonics, 2016.
-[&nbsp;<a href="i2cvb-prostate-bibtex_bib.html#lemaitre2016normalization">bib</a>&nbsp;]
-
-</td>
-</tr>
-</table>
-
-		    <p class="par-ubuntu"><strong>G. Lemaitre, M. Rastgoo, J. Massich, J. C. Vilanova, P. M. Walker, J. Freixenet, A. Meyer-Baese, F. Meriaudeau, and R. Marti,</strong> "Normalization of T2W-MRI prostate images using Rician a priori", <i>SPIE Medical Imaging 2016.</i> San Diego: USA (February 2016). <\!--<a href="https://drive.google.com/file/d/0B-DJ98-Q1GtpTDRhRVVkV2stSFU/view?usp=sharing">[pdf]</a>-\-><a href="https://github.com/I2Cvb/prostate">[source]</a></p>
-		    <p class="par-ubuntu"><strong>G. Lemaitre, J. Massich, R. Marti, J. Freixenet, J. C. Vilanova, P. M. Walker, D. Sidibe, and F. Meriaudeau,</strong> "A Boosting Approach for Prostate Cancer Detection using Multi-parametric MRI", <i>International Conference on Quality Control and Artificial Vision (QCAV) 2015.</i> Le Creusot: France (June 2015). <a href="https://drive.google.com/file/d/0B-DJ98-Q1GtpTDRhRVVkV2stSFU/view?usp=sharing">[pdf]</a> <a href="https://github.com/I2Cvb/prostate">[source]</a></p>
-		    <div class="vspace-30"></div>
-		  </div>
-		  <!-- Probably we should comment this section for the moment
-		       Let's come back when something is ready to be shared
-		       <div class="section-benchmark1 extra-padding-15">
-			 <h3 class="first-par-benchmark" id="prostate-evaluation">Evaluation tools</h3>
-			 <h4 class="h4-ubuntu">Segmentation:</h4>
-			 <p class="par-ubuntu"></p>
-			 <h4 class="h4-ubuntu">Registration:</h4>
-			 <p class="par-ubuntu"></p>
-			 <h4 class="h4-ubuntu">CAD evaluation:</h4>
-			 <p class="par-ubuntu"></p>
-			 <div class="bs-callout bs-callout-warning">
-			   <h4>Still under development ...</h4>
-			   <p>Once the full dataset will be available, evaluation metrics will be provided beside the dataset in order to evaluate the different algorithms developed in-house.</p>
-			 </div>
-		       </div>
-		       <div class="section-benchmark1 extra-padding-15">
-			 <h3 class="first-par-benchmark" id="prostate-benchmarking">Benchmarking</h3>
-			 <div class="bs-callout bs-callout-warning">
-			   <h4>Our future goals ...</h4>
-			   <p>Once that the dataset and the evaluation tool will be commonly used, we will compile and provide a benchmarking report.</p>
-			 </div>
-		       </div>
-		       <div class="section-benchmark1 extra-padding-15">
-			 <h3 class="first-par-benchmark" id="prostate-methods">Available methods</h3>
-			 <div class="bs-callout bs-callout-warning">
-			   <h4>What are we striving for ...</h4>
-			   <p>I2CVB encourages the research community to provide as much as possible information (e.g., code, research journals, etc.) in order to ensure reproducibility and transparency if the algorithms developed. In that manner, I2CVB is confident to boost future innovative work.</p>
-			 </div>
-		       </div>
-		       -->
-		  <div class="row">
-		    <div class="col-xs-2 reference-section"></div><div class="col-xs-10"></div>
-		  </div>
-		  <div class="row">
-		    <div class="col-xs-12">
-		      <p class="reference">Ferlay, J., Shin, H.R., Bray, F., Forman, D., Mathers, C., Parkin, D.M., 2010. Estimates of worldwide burden of cancer in 2008: GLOBOCAN 2008. Int. J. Cancer 127, 2893–2917.</p>
-		    </div>
-		  </div>
-		</div>
-
-		<div id="retino-bench" class="section-benchmark2">
-		  <div class="row equal">
-		    <!--<div class="col-sm-4 vcenter"></div><div class="col-sm-1 vcenter">
-			<img class="img-hand-orange" src="./images/logos/hand-orange.png">
-		    </div>--><div class="col-sm-12 vcenter">
-		      <h2 class="title-principle text-align-center" id="retino">Retinopathy</h2>
-		    </div><!--<div class="col-sm-4 vcenter"></div>-->
-		  </div>
-		  <!--<h2 class="title-principle" id="prostate">Prostate</h2>-->
-		  <!-- <div class="section-benchmark1 extra-padding-15"> -->
-		  <!--   <h3 class="first-par-benchmark" id="prostate-motivations">Motivations</h3> -->
-		  <!--   <p class="introduction-ubuntu"><font color="#f46f1b">Prostate cancer</font> (CaP) has been reported on a worldwide scale to be the second most frequently diagnosed cancer of men accounting for 13.6% (Ferlay et al. (2010)). Statistically, in 2008, the number of new diagnosed cases was estimated to be 899, 000 with no less than 258, 100 deaths (Ferlay et al. (2010)).</p> -->
-		  <!--   <p class="introduction-ubuntu">Magnetic resonance imaging (MRI) provides imaging techniques allowing to diagnose and localize CaP. The I2CVB provides a <font color="#f46f1b">multi-parametric MRI</font> dataset to help at the development of computer-aided detection and diagnosis (<font color="#f46f1b">CAD</font>) system.</p> -->
-		  <!-- </div> -->
-		  <div class="section-benchmark1 extra-padding-15">
-		    <h3 class="first-par-benchmark" id="prostate-data">Datasets</h3>
-		    <!-- <h4 class="h4-ubuntu">Graph highlights:</h4> -->
-		    <!-- <br> -->
-		    <!-- <img src="./images/dataset/prostate-dataset.png"  -->
-		    <!-- 	 alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" class="img-center"> -->
-		    <!-- <br> -->
-		    <!-- <br> -->
-		    <!-- <br> -->
-		    
-		    <!-- <h4 class="h4-ubuntu">Overview:</h4> -->
-		    <!-- <p class="par-ubuntu">In order to provide a wide dataset, the multi-parametric data have been acquired from two different commercial scanners: -->
-		    <!--   <ul> -->
-		    <!-- 	<li class="par-ubuntu">A <font color="#f46f1b">1.5 Tesla</font> General Electric (GE) scanner.</li> -->
-		    <!-- 	<li class="par-ubuntu">A <font color="#f46f1b">3.0 Tesla</font> Siemens scanner.</li> -->
-		    <!--   </ul> -->
-		    <!-- </p> -->
-		    <!-- <p class="par-ubuntu">Each subsect is composed of a total of <font color="#f46f1b">30 patients</font>: -->
-		    <!--   <ul> -->
-		    <!-- 	<li class="par-ubuntu">Twenty patients with biopsy proven CaP.</li> -->
-		    <!-- 	<li class="par-ubuntu">Ten "healthy" patients with negative biopsy results.</li> -->
-		    <!--   </ul> -->
-		    <!-- </p> -->
-		    <!-- <div class="vspace-30"></div> -->
-		    <!-- <h4 class="h4-ubuntu">Modalities:</h4> -->
-		    <!-- <p class="par-ubuntu">The I2CVB provides a multi-parametric MRI dataset. The modalities available the different dataset are: -->
-		    <!--   <ul> -->
-		    <!-- 	<li class="par-ubuntu">T<sub>2</sub>-Weighted (<font color="#f46f1b">T<sub>2</sub>-W</font>) MRI.</li> -->
-		    <!-- 	<li class="par-ubuntu">Dynamic Contrast Enhanced (<font color="#f46f1b">DCE</font>) MRI.</li> -->
-		    <!-- 	<li class="par-ubuntu">Diffusion Weighted Imaging (<font color="#f46f1b">DWI</font>) MRI.</li> -->
-		    <!-- 	<li class="par-ubuntu">Magnetic Resonance Spectroscopic Imaging (<font color="#f46f1b">MRSI</font>).</li> -->
-		    <!--   </ul> -->
-		    <!-- </p> -->
-		    <!-- <p class="par-ubuntu"> -->
-		    <!--   Furthermore, the additional Apparent Diffusion Coefficient (<font color="#f46f1b">ADC</font>) maps are provided for the data acquired with the Siemens scanner. -->
-		    <!-- </p> -->
-		    <!-- <div class="vspace-30"></div> -->
-		    <!-- <h4 class="h4-ubuntu">Image format:</h4> -->
-		    <!-- <p class="par-ubuntu">Regarding some technical aspects of the dataset, the T<sub>2</sub>-W MRI, DCE MRI and DWI MRI, ADC will be delivered in <font color="#f46f1b">DICOM</font> format.</p> -->
-		    <!-- <p class="par-ubuntu">Regarding the MRSI data will be either provided in <font color="#f46f1b">RDA</font> (Siemens) or <font color="#f46f1b">DICOM</font> (GE) format.</p> -->
-		    <!-- <p class="par-ubuntu">Finally all the ground-truth images for each modalities will be provided in <font color="#f46f1b">DICOM</font> format.</p> -->
-		    <!-- <div class="vspace-30"></div> -->
-		    <!-- <h4 class="h4-ubuntu">Ground-truth:</h4> -->
-		    <!-- <p class="par-ubuntu">For each modality, a set of ground-truth is provided. The ground-truth is composed of <font color="#f46f1b">four different classes</font>: (i) prostate gland, (ii) peripheral zone (PZ), (iii) central gland (CG), (iv) CaP.</p> -->
-		    <!-- <div class="vspace-30"></div> -->
-		  <!-- Probably we should comment this section for the moment
-		       Let's come back when something is ready to be shared
-		       <div class="section-benchmark1 extra-padding-15">
-			 <h3 class="first-par-benchmark" id="prostate-evaluation">Evaluation tools</h3>
-			 <h4 class="h4-ubuntu">Segmentation:</h4>
-			 <p class="par-ubuntu"></p>
-			 <h4 class="h4-ubuntu">Registration:</h4>
-			 <p class="par-ubuntu"></p>
-			 <h4 class="h4-ubuntu">CAD evaluation:</h4>
-			 <p class="par-ubuntu"></p>
-			 <div class="bs-callout bs-callout-warning">
-			   <h4>Still under development ...</h4>
-			   <p>Once the full dataset will be available, evaluation metrics will be provided beside the dataset in order to evaluate the different algorithms developed in-house.</p>
-			 </div>
-		       </div>
-		       <div class="section-benchmark1 extra-padding-15">
-			 <h3 class="first-par-benchmark" id="prostate-benchmarking">Benchmarking</h3>
-			 <div class="bs-callout bs-callout-warning">
-			   <h4>Our future goals ...</h4>
-			   <p>Once that the dataset and the evaluation tool will be commonly used, we will compile and provide a benchmarking report.</p>
-			 </div>
-		       </div>
-		       <div class="section-benchmark1 extra-padding-15">
-			 <h3 class="first-par-benchmark" id="prostate-methods">Available methods</h3>
-			 <div class="bs-callout bs-callout-warning">
-			   <h4>What are we striving for ...</h4>
-			   <p>I2CVB encourages the research community to provide as much as possible information (e.g., code, research journals, etc.) in order to ensure reproducibility and transparency if the algorithms developed. In that manner, I2CVB is confident to boost future innovative work.</p>
-			 </div>
-		       </div>
-		       -->
-		  <!-- <div class="row"> -->
-		  <!--   <div class="col-xs-2 reference-section"></div><div class="col-xs-10"></div> -->
-		  <!-- </div> -->
-		  <!-- <div class="row"> -->
-		  <!--   <div class="col-xs-12"> -->
-		  <!--     <p class="reference">Ferlay, J., Shin, H.R., Bray, F., Forman, D., Mathers, C., Parkin, D.M., 2010. Estimates of worldwide burden of cancer in 2008: GLOBOCAN 2008. Int. J. Cancer 127, 2893–2917.</p> -->
-		  <!--   </div> -->
-		  <!-- </div> -->
-		</div>
-		
-		<!--<h2 class="title-principle" id="skin">Skin</h2>
-		    <h3 class="first-par" id="skin-data">Datasets</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h3 class="first-par" id="skin-evaluation">Evaluation tools</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h3 class="first-par" id="skin-benchmarking">Benchmarking</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h3 class="first-par" id="skin-methods">Available methods</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h2 class="title-principle" id="motion-segmentation">Motion Segmentation</h2>
-		<h3 class="first-par" id="motion-segmentation-data">Datasets</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h3 class="first-par" id="motion-segmentation-evaluation">Evaluation tools</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h3 class="first-par" id="motion-segmentation-benchmarking">Benchmarking</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-		<h3 class="first-par" id="motion-segmentation-methods">Available methods</h3>
-		<p class="par-ubuntu">Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two unpleasing any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence are something far engrossed old off. 
-
-		  To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. </p>
-	      </div>-->
-	      </div>
 	  </section>
 
 	  <section id="contact" class="contact-section">
