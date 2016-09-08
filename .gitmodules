@@ -1,0 +1,6 @@
+[submodule "bibtex/i2cvb-prostate-bibtex"]
+	path = bibtex/i2cvb-prostate-bibtex
+	url = https://github.com/I2Cvb/i2cvb-prostate-bibtex.git
+[submodule "bibtex/i2cvb-retinopathy-bibtex"]
+	path = bibtex/i2cvb-retinopathy-bibtex
+	url = https://github.com/I2Cvb/i2cvb-retinopathy-bibtex.git
