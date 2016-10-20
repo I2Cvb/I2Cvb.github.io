@@ -1,0 +1,162 @@
+
+* Summary:
+** DONE Cancer in PZ: 14 - 3 mixed
+** DONE Cancer in CG:  0 - 3 mixed
+** DONE No cancer:     4
+** TODO Cancer in PZ:  2
+** TODO Cancer in CG:  4
+** TODO No cancer:     6
+
+* Patient 33540
+** Data: DWI, T2W
+** TODO Missing data: DCE, MRSI
+** Ground-truth: DWI, T2W 
+** TODO Ground-truth missing: DCE, MRSI
+** Cancer in PZ
+
+* Patient 70168
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** No cancer
+
+* Patient 72679
+** Data: DWI, T2W
+** TODO Missing data: DCE, MRSI
+** Ground-truth: DWI, T2W 
+** TODO Ground-truth missing: DCE, MRSI
+** Cancer in PZ
+
+* Patient 144531
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancers (x2) in PZ
+
+* Patient 185708
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** No cancer
+
+* Patient 428260
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** No cancer
+
+* Patient 779031
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** No cancer
+
+* Patient 1304875
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
+
+* Patient 1374223 
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
+
+* Patient 1527375
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ and CG
+
+* Patient 1786687
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
+
+* Patient 2107294
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ and CG
+
+* Patient 2201807
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancers (x2) in PZ
+
+* Patient 2213046
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
+
+* Patient 2950797
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
+
+* Patient 3053998  
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
+
+* Patient 59355
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
+
+* Patient 136144
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ and CG
+
+* Patient 183699
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
+
+* Patient 203662
+** Data: DWI, T2W
+** TODO Missing data: DCE, MRSI
+** Ground-truth: DWI, T2W 
+** TODO Ground-truth missing: DCE, MRSI
+** Cancer in PZ
+
+* Patient 228550
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
+
+* Patient 616760
+** Data: DCE, DWI, T2W
+** TODO Missing data: MRSI
+** Ground-truth: DCE, DWI, T2W 
+** TODO Ground-truth missing: MRSI
+** Cancer in PZ
